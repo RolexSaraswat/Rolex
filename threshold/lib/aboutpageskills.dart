@@ -87,7 +87,7 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                               fontFamily: 'Poppins',
                                               fontWeight: FontWeight.w400,
                                               fontSize:
-                                                  displayWidth(context) * 0.030,
+                                                  displayWidth(context) * 0.035,
                                             ),
                                           ),
                                         ],
@@ -111,7 +111,7 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'Flutter App Development',
+                                          'App Development',
                                           style: TextStyle(
                                             color: jadeColor,
                                             fontFamily: 'Poppins',
@@ -125,7 +125,7 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          '• Android/iOS',
+                                          '• Android App Devlopement with Java',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -139,7 +139,21 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          '• Flutter Web',
+                                          '• IOS App Devlopement With Swift',
+                                          style: TextStyle(
+                                            color: aquaColor,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w400,
+                                            fontSize:
+                                                displayWidth(context) * 0.018,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Text(
+                                          '• Cross-Platform Devlopement With Flutter',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -196,6 +210,20 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                       children: <Widget>[
                                         Text(
                                           '• Bootstrap',
+                                          style: TextStyle(
+                                            color: aquaColor,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w400,
+                                            fontSize:
+                                                displayWidth(context) * 0.018,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      children: <Widget>[
+                                        Text(
+                                          '• Django ',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -279,7 +307,7 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          '• Js',
+                                          '• Java',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',

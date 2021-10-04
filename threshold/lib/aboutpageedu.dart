@@ -112,7 +112,7 @@ class _AboutPageEduState extends State<AboutPageEdu> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'SRM Institute of Science & Technology',
+                                          'Bennett University',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -126,7 +126,7 @@ class _AboutPageEduState extends State<AboutPageEdu> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'B.Tech (CSE) 2018-2022',
+                                          'B.Tech (CSE) 2020-2024',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -168,7 +168,7 @@ class _AboutPageEduState extends State<AboutPageEdu> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'Presidium Gurgaon',
+                                          'Dehradun Public School',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',

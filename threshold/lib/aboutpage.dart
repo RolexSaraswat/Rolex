@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:threshold/aboutpageskills.dart';
 import 'package:threshold/buttons.dart';
@@ -46,9 +48,13 @@ class _AboutPageState extends State<AboutPage> {
                               height: displayWidth(context) * 0.35,
                               width: displayWidth(context) * 0.47,
                               decoration: BoxDecoration(
+                                gradient: LinearGradient(begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [gr , grb]
+                                ),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(25)),
-                                color: beigeColor,
+                               
                                 boxShadow: [
                                   BoxShadow(
                                     color: lightshadowColor,
@@ -122,7 +128,7 @@ class _AboutPageState extends State<AboutPage> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'A CompSci. Undergrad, based in India.',
+                                          'I am a Sophomore student pursuing B.Tech',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -136,7 +142,7 @@ class _AboutPageState extends State<AboutPage> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'Passionate about creating efficient &',
+                                          'in Computer Science with Specialization in AI.',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -150,7 +156,7 @@ class _AboutPageState extends State<AboutPage> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'useful Software Solutions.',
+                                          '',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -192,7 +198,7 @@ class _AboutPageState extends State<AboutPage> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'efficient User Interfaces.',
+                                          'efficient Projects.',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',

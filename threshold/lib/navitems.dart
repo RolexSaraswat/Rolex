@@ -211,7 +211,7 @@ class _LogoNavState extends State<LogoNav> {
             child: Material(
               type: MaterialType.transparency,
               child: Text(
-                'RR.',
+                'RS',
                 style: TextStyle(
                   color: blackColor,
                   fontFamily: 'Poppins',

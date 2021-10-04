@@ -7,6 +7,8 @@ class CenteredView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage("assets/images/aesbg.jpg"),fit: BoxFit.cover,)),
       padding: const EdgeInsets.only(left: 70.0,right: 70, top: 60),
       alignment: Alignment.topCenter,
       child: ConstrainedBox(

@@ -17,7 +17,7 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: beigeColor,
+      
       body: CenteredView(
         child: ResponsiveBuilder(
           builder: (context, sizingInformation) {
@@ -30,46 +30,76 @@ class _LandingPageState extends State<LandingPage> {
                     height: 50,
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    
+                    
                     children: <Widget>[
+                       Column(
+                             
+                            
+                            children: <Widget>[
+                              SizedBox(
+                                width: 109,
+                              )
+                              
+                            ],
+                          ),
                       Column(
+                        
                         children: <Widget>[
-                          ThresholdCard(),
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: <Widget>[
+                          
                           Column(
+                            
                             crossAxisAlignment: CrossAxisAlignment.end,
+                            
                             children: <Widget>[
                               LandingTextOne(),
-                              LandingTextTwo(),
                               LandingTextThree(),
+                              LandingTextTwo(),
+                              
                             ],
                           ),
                           SizedBox(
-                            height: 200,
+                            height: 100,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(right: 15.0),
+                            padding: const EdgeInsets.only(right: 1.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: <Widget>[
                                 GithubButton(),
                                 SizedBox(
-                                  width: 50,
+                                  width: 70,
                                 ),
                                 LinkedinButton(),
                                 SizedBox(
-                                  width: 50,
+                                  width: 70,
                                 ),
                                 InstagramButton(),
                               ],
                             ),
                           ),
                         ],
-                      )
+                      ),
+                      Column(
+                             crossAxisAlignment: CrossAxisAlignment.end,
+                            
+                            children: <Widget>[
+                              SizedBox(
+                                width: 109,
+                              )
+                              
+                            ],
+                          ),
+
+                     
+
+                       
+                       Column(
+                        children: <Widget>[
+                          ThresholdCard(),
+                        ],
+                      ),
                     ],
                   ),
                   SizedBox(

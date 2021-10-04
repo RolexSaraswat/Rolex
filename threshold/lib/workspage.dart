@@ -47,6 +47,10 @@ class _WorksPageState extends State<WorksPage> {
                   SizedBox(
                     height: 50,
                   ),
+                  HappyusCard(),
+                  SizedBox(
+                    height: 50,
+                  ),
                 ],
               );
             }

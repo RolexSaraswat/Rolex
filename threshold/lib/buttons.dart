@@ -38,12 +38,12 @@ class _LinkedinButtonState extends State<LinkedinButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("https://www.linkedin.com/in/rushil-rai-07363116a");
+          launch("https://www.linkedin.com/in/rolexsaraswat");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
-          height: displayWidth(context) * 0.04,
-          width: displayWidth(context) * 0.04,
+          height: displayWidth(context) * 0.06,
+          width: displayWidth(context) * 0.06,
           decoration: BoxDecoration(
             color: beigeColor,
             gradient: LinearGradient(
@@ -106,12 +106,12 @@ class _InstagramButtonState extends State<InstagramButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("https://www.instagram.com/rushilrai/");
+          launch("https://www.instagram.com/rolexsaraswat/");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
-          height: displayWidth(context) * 0.04,
-          width: displayWidth(context) * 0.04,
+          height: displayWidth(context) * 0.06,
+          width: displayWidth(context) * 0.06,
           decoration: BoxDecoration(
             color: beigeColor,
             gradient: LinearGradient(
@@ -174,12 +174,12 @@ class _GithubButtonState extends State<GithubButton> {
       },
       child: GestureDetector(
         onTap: () {
-          launch("https://github.com/rushilrai");
+          launch("https://github.com/rolexsaraswat");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
-          height: displayWidth(context) * 0.04,
-          width: displayWidth(context) * 0.04,
+          height: displayWidth(context) * 0.06,
+          width: displayWidth(context) * 0.06,
           decoration: BoxDecoration(
             color: beigeColor,
             gradient: LinearGradient(
@@ -242,7 +242,7 @@ class _EmailButtonState extends State<EmailButton> {
       },
       child: GestureDetector(
         onTap: () {
-          launch("mailto:rushil.rai999@gmail.com");
+          launch("mailto:Rolex3393@gmail.com");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -280,7 +280,7 @@ class _EmailButtonState extends State<EmailButton> {
                   color: brownColor,
                 ),
                 SelectableText(
-                  'rushil.rai999@gmail.com',
+                  'Rolex3393@gmail.com',
                   style: TextStyle(
                     color: brownColor,
                     fontFamily: 'Poppins',
@@ -330,7 +330,7 @@ class _PhoneButtonState extends State<PhoneButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("tel:+919650693092");
+          launch("tel:+91 7042072334");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -368,7 +368,7 @@ class _PhoneButtonState extends State<PhoneButton> {
                   color: brownColor,
                 ),
                 SelectableText(
-                  '(+91) 9650693092',
+                  '(+91) 7042072334',
                   style: TextStyle(
                     color: brownColor,
                     fontFamily: 'Poppins',
@@ -871,7 +871,7 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
-                              'Threshold',
+                              'Ikigai',
                               style: TextStyle(
                                 color: brownColor,
                                 fontFamily: 'Poppins',
@@ -905,7 +905,7 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
                       height: 30,
                     ),
                     Text(
-                      "Threshold, the name of my first Portfolio Website. \nIt features all my Projects and Work, and also a few things you would like to know about me. \nTried to experiment with a different design as compared to most other Portfolio websites.",
+                      "Ikigai, the name of my first Portfolio Website. \nIt features all my Projects and Work, and also a few things you would like to know about me. \nTried to experiment with a different design as compared to most other Portfolio websites.",
                       style: TextStyle(
                         color: aquaColor,
                         fontFamily: 'Poppins',
@@ -1648,6 +1648,220 @@ class UjjayDetailsButton extends StatefulWidget {
 }
 
 class _UjjayDetailsButtonState extends State<UjjayDetailsButton> {
+  List<Color> colors = [beigeColor, beigeColor];
+  Offset lightShadow = Offset(-5, -5);
+  Offset darkShadow = Offset(5, 5);
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (event) {
+        setState(() {
+          lightShadow = Offset(0, 0);
+          darkShadow = Offset(0, 0);
+          colors = [
+            //    Color.fromRGBO(255, 254, 239, 1),
+            Color.fromRGBO(230, 213, 201, 1),
+            Color.fromRGBO(250, 239, 232, 1),
+          ];
+        });
+      },
+      onExit: (event) {
+        setState(() {
+          lightShadow = Offset(-5, -5);
+          darkShadow = Offset(5, 5);
+          colors = [beigeColor, beigeColor];
+        });
+      },
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          showMaterialModalBottomSheet(
+            enableDrag: false,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
+            )),
+            context: context,
+            builder: (context, scrollController) => Container(
+              height: displayHeight(context) * 0.9,
+              decoration: BoxDecoration(
+                color: beigeColor,
+              ),
+              child: CenteredView(
+                child: ListView(
+                  shrinkWrap: true,
+                  physics: BouncingScrollPhysics(),
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        IconButton(
+                          icon: Icon(
+                            Icons.arrow_back_ios,
+                            color: brownColor,
+                            size: displayWidth(context) * 0.025,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Ujjay Kisan',
+                              style: TextStyle(
+                                color: brownColor,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w200,
+                                fontSize: displayWidth(context) * 0.025,
+                              ),
+                            ),
+                            TweenAnimationBuilder(
+                              duration: Duration(milliseconds: 1000),
+                              tween: Tween<double>(
+                                begin: 0,
+                                end: displayWidth(context) * 0.05,
+                              ),
+                              builder: (context, value, child) {
+                                return AnimatedContainer(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: brownColor,
+                                  ),
+                                  duration: Duration(milliseconds: 200),
+                                  width: value,
+                                  height: 2.5,
+                                );
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Text(
+                      "Worked closely with the team responsible for developing Ujjay Kisan. \nHelped the bring a fresh new look to the app, alongside with helping them bring up various new enhancements and features. \nUsed Flutter to write the Application from scratch. The various new features and greatly enhanced design are all an aid to the goal of providing modern and connected agriculture",
+                      style: TextStyle(
+                        color: aquaColor,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w200,
+                        fontSize: displayWidth(context) * 0.02,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        UjjayProjectButton(),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/ujjay/ujjaydetails.png'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            
+                            image: AssetImage(
+                                'assets/images/workbg/ujjay/ujjaydetails.png'),
+                          )),
+                    ),
+                  ],
+                  
+                ),
+              ),
+            ),
+          );
+        },
+        child: TweenAnimationBuilder(
+          tween: Tween<double>(
+            begin: 0.0,
+            end: 1.0,
+          ),
+          duration: Duration(milliseconds: 300),
+          builder: (context, value, child) {
+            return AnimatedOpacity(
+              duration: Duration(milliseconds: 300),
+              opacity: value,
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 300),
+                height: displayWidth(context) * 0.025,
+                width: displayWidth(context) * 0.13,
+                decoration: BoxDecoration(
+                  color: beigeColor,
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: colors,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: lightshadowColor,
+                      offset: lightShadow,
+                      blurRadius: 10,
+                    ),
+                    BoxShadow(
+                      color: darkshadowColor,
+                      offset: darkShadow,
+                      blurRadius: 10,
+                    ),
+                  ],
+                  borderRadius: BorderRadius.all(Radius.circular(17)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Read More',
+                        style: TextStyle(
+                          color: brownColor,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w200,
+                          fontSize: displayWidth(context) * 0.012,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+
+class HappyusDetailsButton extends StatefulWidget {
+  @override
+  _HappyusDetailsButtonState createState() => _HappyusDetailsButtonState();
+}
+
+class _HappyusDetailsButtonState extends State<HappyusDetailsButton> {
   List<Color> colors = [beigeColor, beigeColor];
   Offset lightShadow = Offset(-5, -5);
   Offset darkShadow = Offset(5, 5);
