@@ -415,8 +415,90 @@ class _UjjayProjectButtonState extends State<UjjayProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch(
-              "https://play.google.com/store/apps/details?id=com.app2.farmringg&hl=en");
+          launch("https://github.com/RolexSaraswat/Edulex");
+        },
+        child: AnimatedContainer(
+          duration: Duration(milliseconds: 400),
+          height: displayWidth(context) * 0.025,
+          width: displayWidth(context) * 0.12,
+          decoration: BoxDecoration(
+            color: beigeColor,
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: colors,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: lightshadowColor,
+                offset: lightShadow,
+                blurRadius: 10,
+              ),
+              BoxShadow(
+                color: darkshadowColor,
+                offset: darkShadow,
+                blurRadius: 10,
+              ),
+            ],
+            borderRadius: BorderRadius.all(Radius.circular(17)),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text(
+                  'View Project',
+                  style: TextStyle(
+                    color: brownColor,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w200,
+                    fontSize: displayWidth(context) * 0.012,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class HappyusProjectButton extends StatefulWidget {
+  @override
+  _HappyusProjectButtonState createState() => _HappyusProjectButtonState();
+}
+
+class _HappyusProjectButtonState extends State<HappyusProjectButton> {
+  List<Color> colors = [beigeColor, beigeColor];
+  Offset lightShadow = Offset(-5, -5);
+  Offset darkShadow = Offset(5, 5);
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (event) {
+        setState(() {
+          lightShadow = Offset(0, 0);
+          darkShadow = Offset(0, 0);
+          colors = [
+            //    Color.fromRGBO(255, 254, 239, 1),
+            Color.fromRGBO(230, 213, 201, 1),
+            Color.fromRGBO(250, 239, 232, 1),
+          ];
+        });
+      },
+      onExit: (event) {
+        setState(() {
+          lightShadow = Offset(-5, -5);
+          darkShadow = Offset(5, 5);
+          colors = [beigeColor, beigeColor];
+        });
+      },
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          launch("https://github.com/RolexSaraswat/happyus");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -499,8 +581,7 @@ class _PointifyProjectButtonState extends State<PointifyProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch(
-              "https://play.google.com/store/apps/details?id=com.rr.pointify");
+          launch("https://github.com/RolexSaraswat/Cue");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -583,8 +664,7 @@ class _HustleProjectButtonState extends State<HustleProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch(
-              "https://play.google.com/store/apps/details?id=com.rr.hustle2");
+          launch("");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -667,7 +747,7 @@ class _ArenaProjectButtonState extends State<ArenaProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("https://github.com/mihirs16/Arena");
+          launch("");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -750,7 +830,7 @@ class _ThresholdProjectButtonState extends State<ThresholdProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("https://github.com/rushilrai/Threshold");
+          launch("https://github.com/Rolexsaraswat/Rolex");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -1162,7 +1242,20 @@ class _HustleDetailsButtonState extends State<HustleDetailsButton> {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image: AssetImage(
-                                'assets/images/workbg/hustle/hustledetails.png'),
+                                'assets/images/workbg/hustle/urrb2.png'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/hustle/urrb1.png'),
                           )),
                     ),
                     SizedBox(

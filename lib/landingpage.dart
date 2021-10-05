@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:threshold/buttons.dart';
 import 'package:threshold/centeredview.dart';
-import 'package:threshold/colors.dart';
 import 'package:threshold/navbar.dart';
 import 'package:threshold/thresholdcard.dart';
 
