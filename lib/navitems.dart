@@ -208,18 +208,26 @@ class _LogoNavState extends State<LogoNav> {
         children: [
           Hero(
             tag: "Ikigai",
-            child: Material(
-              type: MaterialType.transparency,
-              child: Text(
-                'Ikigai',
-                style: TextStyle(
-                  color: blackColor,
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.w400,
-                  fontSize: displayWidth(context) * 0.015,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  CupertinoPageRoute(builder: (context) => LandingPage()),
+                );
+              },
+              child: Material(
+                type: MaterialType.transparency,
+                child: Text(
+                  'Ikigai',
+                  style: TextStyle(
+                    color: blackColor,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                    fontSize: displayWidth(context) * 0.015,
+                  ),
                 ),
               ),
-            ),
+            ).showCursorOnHover.shiftOnHover,
           ),
           AnimatedContainer(
             duration: Duration(milliseconds: 200),

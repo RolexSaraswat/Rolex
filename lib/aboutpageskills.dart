@@ -45,6 +45,10 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                               height: displayWidth(context) * 0.35,
                               width: displayWidth(context) * 0.47,
                               decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [gr, grb]),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(25)),
                                 color: beigeColor,

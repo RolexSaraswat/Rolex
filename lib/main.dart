@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Threshold.',
+      debugShowCheckedModeBanner: false,
       initialRoute: '/landing',
       routes: {
         '/landing': (context) => LandingPage(),

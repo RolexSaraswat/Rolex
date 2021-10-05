@@ -80,8 +80,7 @@ flutter:
           weight: 400
   assets: 
     - assets/images/
-    - assets/images/Threshold.png
-    - assets/images/bg-threshold.png
+   
     - assets/images/Education.png
     - assets/images/Skills.png
     - assets/images/rol.jpg

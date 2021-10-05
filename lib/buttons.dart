@@ -47,10 +47,9 @@ class _LinkedinButtonState extends State<LinkedinButton> {
           decoration: BoxDecoration(
             color: beigeColor,
             gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: colors,
-            ),
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [gr, grb]),
             boxShadow: [
               BoxShadow(
                 color: lightshadowColor,
@@ -115,10 +114,9 @@ class _InstagramButtonState extends State<InstagramButton> {
           decoration: BoxDecoration(
             color: beigeColor,
             gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: colors,
-            ),
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [gr, grb]),
             boxShadow: [
               BoxShadow(
                 color: lightshadowColor,
@@ -183,10 +181,9 @@ class _GithubButtonState extends State<GithubButton> {
           decoration: BoxDecoration(
             color: beigeColor,
             gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: colors,
-            ),
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [gr, grb]),
             boxShadow: [
               BoxShadow(
                 color: lightshadowColor,
@@ -934,7 +931,7 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
                             alignment: Alignment.topCenter,
                             fit: BoxFit.cover,
                             image: AssetImage(
-                                'assets/images/workbg/threshold/thresholddetails1.png'),
+                                'assets/images/workbg/threshold/ikigai3.png'),
                           )),
                     ),
                     SizedBox(
@@ -948,7 +945,7 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image: AssetImage(
-                                'assets/images/workbg/threshold/thresholddetails2.png'),
+                                'assets/images/workbg/threshold/ikigai2.png'),
                           )),
                     ),
                     SizedBox(
@@ -963,7 +960,7 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
                             alignment: Alignment.bottomCenter,
                             fit: BoxFit.cover,
                             image: AssetImage(
-                                'assets/images/workbg/threshold/thresholddetails3.png'),
+                                'assets/images/workbg/threshold/ikigai1.png'),
                           )),
                     ),
                     SizedBox(
