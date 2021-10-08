@@ -16,11 +16,11 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: CenteredView(
         child: ResponsiveBuilder(
           builder: (context, sizingInformation) {
-            if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
+            if (sizingInformation.deviceScreenType ==
+                DeviceScreenType.desktop) {
               return ListView(
                 physics: BouncingScrollPhysics(),
                 children: <Widget>[
@@ -30,32 +30,22 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    
-                    
                     children: <Widget>[
-                       Column(
-                             
-                            
-                            children: <Widget>[
-                              SizedBox(
-                                width: 109,
-                              )
-                              
-                            ],
-                          ),
                       Column(
-                        
                         children: <Widget>[
-                          
+                          SizedBox(
+                            width: 109,
+                          )
+                        ],
+                      ),
+                      Column(
+                        children: <Widget>[
                           Column(
-                            
                             crossAxisAlignment: CrossAxisAlignment.end,
-                            
                             children: <Widget>[
                               LandingTextOne(),
                               LandingTextThree(),
                               LandingTextTwo(),
-                              
                             ],
                           ),
                           SizedBox(
@@ -81,20 +71,14 @@ class _LandingPageState extends State<LandingPage> {
                         ],
                       ),
                       Column(
-                             crossAxisAlignment: CrossAxisAlignment.end,
-                            
-                            children: <Widget>[
-                              SizedBox(
-                                width: 109,
-                              )
-                              
-                            ],
-                          ),
-
-                     
-
-                       
-                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 109,
+                          )
+                        ],
+                      ),
+                      Column(
                         children: <Widget>[
                           ThresholdCard(),
                         ],

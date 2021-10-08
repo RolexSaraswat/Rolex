@@ -225,6 +225,10 @@ class _AboutPageEduState extends State<AboutPageEdu> {
                                     height: displayWidth(context) * 0.10,
                                     width: displayWidth(context) * 0.25,
                                     decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
+                                          colors: [gr, grb]),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(10)),
                                       color: beigeColor,
@@ -268,6 +272,10 @@ class _AboutPageEduState extends State<AboutPageEdu> {
                                     height: displayWidth(context) * 0.10,
                                     width: displayWidth(context) * 0.25,
                                     decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
+                                          colors: [gr, grb]),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(10)),
                                       color: beigeColor,

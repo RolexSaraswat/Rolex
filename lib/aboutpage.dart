@@ -48,13 +48,12 @@ class _AboutPageState extends State<AboutPage> {
                               height: displayWidth(context) * 0.35,
                               width: displayWidth(context) * 0.47,
                               decoration: BoxDecoration(
-                                gradient: LinearGradient(begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [gr , grb]
-                                ),
+                                gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [gr, grb]),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(25)),
-                               
                                 boxShadow: [
                                   BoxShadow(
                                     color: lightshadowColor,
@@ -265,6 +264,10 @@ class _AboutPageState extends State<AboutPage> {
                                     height: displayWidth(context) * 0.10,
                                     width: displayWidth(context) * 0.25,
                                     decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
+                                          colors: [gr, grb]),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(10)),
                                       color: beigeColor,
@@ -309,6 +312,10 @@ class _AboutPageState extends State<AboutPage> {
                                     height: displayWidth(context) * 0.10,
                                     width: displayWidth(context) * 0.25,
                                     decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
+                                          colors: [gr, grb]),
                                       borderRadius:
                                           BorderRadius.all(Radius.circular(10)),
                                       color: beigeColor,
