@@ -78,6 +78,11 @@ flutter:
       fonts:
         - asset: assets/fonts/poppins/moon.ttf
           weight: 400
+
+    - family: kal
+      fonts:
+        - asset: assets/fonts/poppins/kal.ttf
+          weight: 400
   assets: 
     - assets/images/
    

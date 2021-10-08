@@ -8,12 +8,11 @@ class LandingTextOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       'This is Rolex Saraswat.',
-      textAlign: TextAlign.center,
+      textAlign: TextAlign.left,
       style: TextStyle(
         color: brownColor,
         fontFamily: 'moon',
-        
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w400,
         fontSize: displayWidth(context) * 0.035,
       ),
     );
@@ -24,16 +23,14 @@ class LandingTextTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'An ambivert with a pinch\nof humour and intellect,\na memer from inside\nand a developer from outside.',
+      'An ambivert with a pinch of\nhumour and intellect,a memer\nfrom inside and a developer\nfrom outside.',
       textAlign: TextAlign.center,
-      
       style: TextStyle(
         color: aquaColor,
-        fontFamily: 'moon',
-        fontWeight: FontWeight.w500,
-        fontSize: displayWidth(context) * 0.03,
+        fontFamily: 'kal',
+        fontWeight: FontWeight.w400,
+        fontSize: displayWidth(context) * 0.028,
       ),
-      
     );
   }
 }

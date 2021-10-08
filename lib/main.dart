@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Threshold.',
+      title: 'Ikigai',
       debugShowCheckedModeBanner: false,
       initialRoute: '/landing',
       routes: {

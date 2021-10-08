@@ -39,7 +39,7 @@ class _WorksPageState extends State<WorksPage> {
                   SizedBox(
                     height: 20,
                   ),
-                  HustleCard(),
+                  HappyusCard(),
                   SizedBox(
                     height: 20,
                   ),
@@ -47,7 +47,7 @@ class _WorksPageState extends State<WorksPage> {
                   SizedBox(
                     height: 50,
                   ),
-                  HappyusCard(),
+                  HustleCard(),
                   SizedBox(
                     height: 50,
                   ),

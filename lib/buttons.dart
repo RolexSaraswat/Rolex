@@ -498,7 +498,7 @@ class _HappyusProjectButtonState extends State<HappyusProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("https://github.com/RolexSaraswat/happyus");
+          launch("https://happyus.in/");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -664,7 +664,7 @@ class _HustleProjectButtonState extends State<HustleProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("");
+          launch("https://github.com/RolexSaraswat/");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -747,7 +747,7 @@ class _ArenaProjectButtonState extends State<ArenaProjectButton> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launch("");
+          launch("https://i.ibb.co/GP9QRxq/logo.png");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -1215,7 +1215,7 @@ class _HustleDetailsButtonState extends State<HustleDetailsButton> {
                       height: 30,
                     ),
                     Text(
-                      "Urban Farm, one of Mangata's first projects, was to basically create was to create software solutions for product based startup, creating website and applications on both android, using Java and iOs, using Swift as the backend language, showcasing both my designing and development as a full stack developer.",
+                      "Urrban Farm, one of Mangata's first projects, was to basically create was to create software solutions for product based startup, creating website and applications on both android, using Java and iOs, using Swift as the backend language, showcasing both my designing and development as a full stack developer.",
                       style: TextStyle(
                         color: aquaColor,
                         fontFamily: 'Poppins',
@@ -1430,7 +1430,7 @@ class _PointifyDetailsButtonState extends State<PointifyDetailsButton> {
                       height: 30,
                     ),
                     Text(
-                      "Cue is a smart period detection android application. \nwhich not only helps you to keep a monitored track of your period cycle but also comes with other features enhancing user experience.\nThe application has an user friendly interface and was mainly designed keeping the UI in view. ",
+                      "Cue is a smart period detection android application which not only helps you to keep a monitored track of your period cycle but also comes with other features enhancing user experience. Cue gives you a one-day prior notification for your next cycle so as that the user can be mentally prepared beforehand. The application has an user friendly interface and was mainly designed keeping the UI in view.",
                       style: TextStyle(
                         color: aquaColor,
                         fontFamily: 'Poppins',
@@ -2123,7 +2123,7 @@ class _HappyusDetailsButtonState extends State<HappyusDetailsButton> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        UjjayProjectButton(),
+                        HappyusProjectButton(),
                       ],
                     ),
                     SizedBox(
