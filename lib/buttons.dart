@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
-import 'package:threshold/centeredview.dart';
-import 'package:threshold/colors.dart';
-import 'package:threshold/sizes_helper.dart';
+import 'package:Ikigai/centeredview.dart';
+import 'package:Ikigai/colors.dart';
+import 'package:Ikigai/sizes_helper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LinkedinButton extends StatefulWidget {
@@ -416,6 +416,88 @@ class _UjjayProjectButtonState extends State<UjjayProjectButton> {
       child: GestureDetector(
         onTap: () {
           launch("https://github.com/RolexSaraswat/Edulex");
+        },
+        child: AnimatedContainer(
+          duration: Duration(milliseconds: 400),
+          height: displayWidth(context) * 0.025,
+          width: displayWidth(context) * 0.12,
+          decoration: BoxDecoration(
+            color: beigeColor,
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: colors,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: lightshadowColor,
+                offset: lightShadow,
+                blurRadius: 10,
+              ),
+              BoxShadow(
+                color: darkshadowColor,
+                offset: darkShadow,
+                blurRadius: 10,
+              ),
+            ],
+            borderRadius: BorderRadius.all(Radius.circular(17)),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text(
+                  'View Project',
+                  style: TextStyle(
+                    color: brownColor,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w200,
+                    fontSize: displayWidth(context) * 0.012,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+class IkshanaProjectButton extends StatefulWidget {
+  @override
+  _IkshanaProjectButtonState createState() => _IkshanaProjectButtonState();
+}
+
+class _IkshanaProjectButtonState extends State<IkshanaProjectButton> {
+  List<Color> colors = [beigeColor, beigeColor];
+  Offset lightShadow = Offset(-5, -5);
+  Offset darkShadow = Offset(5, 5);
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (event) {
+        setState(() {
+          lightShadow = Offset(0, 0);
+          darkShadow = Offset(0, 0);
+          colors = [
+            //    Color.fromRGBO(255, 254, 239, 1),
+            Color.fromRGBO(230, 213, 201, 1),
+            Color.fromRGBO(250, 239, 232, 1),
+          ];
+        });
+      },
+      onExit: (event) {
+        setState(() {
+          lightShadow = Offset(-5, -5);
+          darkShadow = Offset(5, 5);
+          colors = [beigeColor, beigeColor];
+        });
+      },
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          launch("https://ikshana.herokuapp.com/");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -2137,6 +2219,465 @@ class _HappyusDetailsButtonState extends State<HappyusDetailsButton> {
                             fit: BoxFit.cover,
                             image: AssetImage(
                                 'assets/images/workbg/happyus/ha.png'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
+        child: TweenAnimationBuilder(
+          tween: Tween<double>(
+            begin: 0.0,
+            end: 1.0,
+          ),
+          duration: Duration(milliseconds: 300),
+          builder: (context, value, child) {
+            return AnimatedOpacity(
+              duration: Duration(milliseconds: 300),
+              opacity: value,
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 300),
+                height: displayWidth(context) * 0.025,
+                width: displayWidth(context) * 0.13,
+                decoration: BoxDecoration(
+                  color: beigeColor,
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: colors,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: lightshadowColor,
+                      offset: lightShadow,
+                      blurRadius: 10,
+                    ),
+                    BoxShadow(
+                      color: darkshadowColor,
+                      offset: darkShadow,
+                      blurRadius: 10,
+                    ),
+                  ],
+                  borderRadius: BorderRadius.all(Radius.circular(17)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Read More',
+                        style: TextStyle(
+                          color: brownColor,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w200,
+                          fontSize: displayWidth(context) * 0.012,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+
+class IkshanaDetailsButton extends StatefulWidget {
+  @override
+  _IkshanaDetailsButtonState createState() => _IkshanaDetailsButtonState();
+}
+
+class _IkshanaDetailsButtonState extends State<IkshanaDetailsButton> {
+  List<Color> colors = [beigeColor, beigeColor];
+  Offset lightShadow = Offset(-5, -5);
+  Offset darkShadow = Offset(5, 5);
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (event) {
+        setState(() {
+          lightShadow = Offset(0, 0);
+          darkShadow = Offset(0, 0);
+          colors = [
+            //    Color.fromRGBO(255, 254, 239, 1),
+            Color.fromRGBO(230, 213, 201, 1),
+            Color.fromRGBO(250, 239, 232, 1),
+          ];
+        });
+      },
+      onExit: (event) {
+        setState(() {
+          lightShadow = Offset(-5, -5);
+          darkShadow = Offset(5, 5);
+          colors = [beigeColor, beigeColor];
+        });
+      },
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          showMaterialModalBottomSheet(
+            enableDrag: false,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
+            )),
+            context: context,
+            builder: (context, scrollController) => Container(
+              height: displayHeight(context) * 0.9,
+              decoration: BoxDecoration(
+                color: beigeColor,
+              ),
+              child: CenteredView(
+                child: ListView(
+                  shrinkWrap: true,
+                  physics: BouncingScrollPhysics(),
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        IconButton(
+                          icon: Icon(
+                            Icons.arrow_back_ios,
+                            color: brownColor,
+                            size: displayWidth(context) * 0.025,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Ikshana',
+                              style: TextStyle(
+                                color: brownColor,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w200,
+                                fontSize: displayWidth(context) * 0.025,
+                              ),
+                            ),
+                            TweenAnimationBuilder(
+                              duration: Duration(milliseconds: 1000),
+                              tween: Tween<double>(
+                                begin: 0,
+                                end: displayWidth(context) * 0.05,
+                              ),
+                              builder: (context, value, child) {
+                                return AnimatedContainer(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: brownColor,
+                                  ),
+                                  duration: Duration(milliseconds: 200),
+                                  width: value,
+                                  height: 2.5,
+                                );
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Text(
+                      "IKSHANA is my first Machine learning project. It takes Braille image as input and gives segmented braille along with translation to English and text to speech feature. Currently available in: \n Web using Python-Flask \n Android using JAVA \n IOS using Swift \n This was a quite challenging project. ",
+                      style: TextStyle(
+                        color: aquaColor,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w200,
+                        fontSize: displayWidth(context) * 0.02,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        IkshanaProjectButton(),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/ikshana/ikhu.png'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
+        child: TweenAnimationBuilder(
+          tween: Tween<double>(
+            begin: 0.0,
+            end: 1.0,
+          ),
+          duration: Duration(milliseconds: 300),
+          builder: (context, value, child) {
+            return AnimatedOpacity(
+              duration: Duration(milliseconds: 300),
+              opacity: value,
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 300),
+                height: displayWidth(context) * 0.025,
+                width: displayWidth(context) * 0.13,
+                decoration: BoxDecoration(
+                  color: beigeColor,
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: colors,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: lightshadowColor,
+                      offset: lightShadow,
+                      blurRadius: 10,
+                    ),
+                    BoxShadow(
+                      color: darkshadowColor,
+                      offset: darkShadow,
+                      blurRadius: 10,
+                    ),
+                  ],
+                  borderRadius: BorderRadius.all(Radius.circular(17)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Read More',
+                        style: TextStyle(
+                          color: brownColor,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w200,
+                          fontSize: displayWidth(context) * 0.012,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+
+class LsDetailsButton extends StatefulWidget {
+  @override
+  _LsDetailsButtonState createState() => _LsDetailsButtonState();
+}
+
+class _LsDetailsButtonState extends State<LsDetailsButton> {
+  List<Color> colors = [beigeColor, beigeColor];
+  Offset lightShadow = Offset(-5, -5);
+  Offset darkShadow = Offset(5, 5);
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (event) {
+        setState(() {
+          lightShadow = Offset(0, 0);
+          darkShadow = Offset(0, 0);
+          colors = [
+            //    Color.fromRGBO(255, 254, 239, 1),
+            Color.fromRGBO(230, 213, 201, 1),
+            Color.fromRGBO(250, 239, 232, 1),
+          ];
+        });
+      },
+      onExit: (event) {
+        setState(() {
+          lightShadow = Offset(-5, -5);
+          darkShadow = Offset(5, 5);
+          colors = [beigeColor, beigeColor];
+        });
+      },
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          showMaterialModalBottomSheet(
+            enableDrag: false,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
+            )),
+            context: context,
+            builder: (context, scrollController) => Container(
+              height: displayHeight(context) * 0.9,
+              decoration: BoxDecoration(
+                color: beigeColor,
+              ),
+              child: CenteredView(
+                child: ListView(
+                  shrinkWrap: true,
+                  physics: BouncingScrollPhysics(),
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        IconButton(
+                          icon: Icon(
+                            Icons.arrow_back_ios,
+                            color: brownColor,
+                            size: displayWidth(context) * 0.025,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Graphic Designs',
+                              style: TextStyle(
+                                color: brownColor,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w200,
+                                fontSize: displayWidth(context) * 0.025,
+                              ),
+                            ),
+                            TweenAnimationBuilder(
+                              duration: Duration(milliseconds: 1000),
+                              tween: Tween<double>(
+                                begin: 0,
+                                end: displayWidth(context) * 0.05,
+                              ),
+                              builder: (context, value, child) {
+                                return AnimatedContainer(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(30),
+                                    color: brownColor,
+                                  ),
+                                  duration: Duration(milliseconds: 200),
+                                  width: value,
+                                  height: 2.5,
+                                );
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Text(
+                      "As a Developer and graphic designer, I know what brands need to capture their audiences' attention. With my powerful design skills and knack for Developement, I have the audacity to make my work exemplary.",
+                      style: TextStyle(
+                        color: aquaColor,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w200,
+                        fontSize: displayWidth(context) * 0.02,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/Design/Ls.png'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/Design/mang.png'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/Design/tcb.jpeg'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/Design/hs.png'),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: displayHeight(context) * 0.8,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                                'assets/images/workbg/Design/ik.jpg'),
                           )),
                     ),
                     SizedBox(

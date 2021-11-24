@@ -1,11 +1,11 @@
 {
-    "name": "threshold",
-    "short_name": "threshold",
+    "name": "Ikigai",
+    "short_name": "Ikigai",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "My Flutter Portfolio.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

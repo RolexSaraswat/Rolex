@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:threshold/buttons.dart';
-import 'package:threshold/centeredview.dart';
-import 'package:threshold/navbar.dart';
-import 'package:threshold/thresholdcard.dart';
+import 'package:Ikigai/buttons.dart';
+import 'package:Ikigai/centeredview.dart';
+import 'package:Ikigai/navbar.dart';
+import 'package:Ikigai/thresholdcard.dart';
 
 import 'landingtext.dart';
 
@@ -91,9 +91,53 @@ class _LandingPageState extends State<LandingPage> {
                 ],
               );
             }
-            return Container(
-              child: Center(child: Text('Mobile View Under ')),
-            );
+            if (sizingInformation.deviceScreenType ==
+                DeviceScreenType.mobile) {
+            return ListView(
+                
+                children: <Widget>[
+                  
+                  
+                  Column(
+                    
+                    children: <Widget>[
+                      Column(
+                        children: <Widget>[
+                          SizedBox(
+                            width: 109,
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: <Widget>[
+                          Column(
+                           
+                            children: <Widget>[
+                              LandingTextOne(),
+                              LandingTextThree(),
+                              LandingTextTwo(),
+                             
+                            ],
+                          ),
+                         
+                         
+                          
+                        ],
+                      ),
+                      Row(
+                       
+                        children: <Widget>[
+                          SizedBox(
+                            width: 109,
+                          )
+                        ],
+                      ),
+                     
+                    ],
+                  ),
+                
+                ],
+              );}
           },
         ),
       ),

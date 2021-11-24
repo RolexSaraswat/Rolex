@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:threshold/centeredview.dart';
-import 'package:threshold/colors.dart';
-import 'package:threshold/hover_extensions.dart';
-import 'package:threshold/navbar_about.dart';
-import 'package:threshold/sizes_helper.dart';
+import 'package:Ikigai/centeredview.dart';
+import 'package:Ikigai/colors.dart';
+import 'package:Ikigai/hover_extensions.dart';
+import 'package:Ikigai/navbar_about.dart';
+import 'package:Ikigai/sizes_helper.dart';
 
 import 'aboutpage.dart';
 import 'aboutpageskills.dart';

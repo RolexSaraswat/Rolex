@@ -1,4 +1,4 @@
-name: threshold
+name: Ikigai
 description: A new Flutter project.
 
 
@@ -101,9 +101,13 @@ flutter:
     - assets/images/workbg/Pointify.png
     - assets/images/workbg/Ujjay.png
     - assets/images/workbg/hapy.png
+    - assets/images/workbg/Ikshana.png
+    - assets/images/workbg/Designs.png
     - assets/images/workbg/ujjay/
     - assets/images/workbg/pointify/
     - assets/images/workbg/hustle/
+    - assets/images/workbg/Design/
     - assets/images/workbg/arena/
     - assets/images/workbg/threshold/
     - assets/images/workbg/happyus/
+    - assets/images/workbg/ikshana/

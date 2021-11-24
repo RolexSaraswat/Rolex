@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:threshold/colors.dart';
-import 'package:threshold/hover_extensions.dart';
-import 'package:threshold/landingpage.dart';
-import 'package:threshold/sizes_helper.dart';
-import 'package:threshold/workspage.dart';
+import 'package:Ikigai/colors.dart';
+import 'package:Ikigai/hover_extensions.dart';
+import 'package:Ikigai/landingpage.dart';
+import 'package:Ikigai/sizes_helper.dart';
+import 'package:Ikigai/workspage.dart';
 
 import 'aboutpage.dart';
 

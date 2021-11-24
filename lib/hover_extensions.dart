@@ -1,10 +1,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:threshold/rotateonhover.dart';
+import 'package:Ikigai/rotateonhover.dart';
 import 'package:universal_html/html.dart' as html;
-import 'package:threshold/translateonhover.dart';
-import 'package:threshold/translateonhover2.dart';
-import 'package:threshold/translateonhover3.dart';
+import 'package:Ikigai/translateonhover.dart';
+import 'package:Ikigai/translateonhover2.dart';
+import 'package:Ikigai/translateonhover3.dart';
 
 extension HoverExtensions on Widget {
   static final appContainer =

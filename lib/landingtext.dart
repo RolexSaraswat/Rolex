@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:threshold/sizes_helper.dart';
+import 'package:Ikigai/sizes_helper.dart';
 
 import 'colors.dart';
 

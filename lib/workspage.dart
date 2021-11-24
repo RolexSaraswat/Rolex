@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:threshold/centeredview.dart';
-import 'package:threshold/colors.dart';
-import 'package:threshold/navbar_works.dart';
-import 'package:threshold/workcards.dart';
+import 'package:Ikigai/centeredview.dart';
+import 'package:Ikigai/colors.dart';
+import 'package:Ikigai/navbar_works.dart';
+import 'package:Ikigai/workcards.dart';
 
 class WorksPage extends StatefulWidget {
   @override
@@ -27,6 +27,14 @@ class _WorksPageState extends State<WorksPage> {
                   SizedBox(
                     height: 50,
                   ),
+                  IkshanaCard(),
+                  SizedBox(
+                    height: 50,
+                  ),
+                  LsCard(),
+                  SizedBox(
+                    height: 50,
+                  ),
                   ThresholdCard(),
                   SizedBox(
                     height: 20,
@@ -35,6 +43,7 @@ class _WorksPageState extends State<WorksPage> {
                   SizedBox(
                     height: 20,
                   ),
+                  
                   PointifyCard(),
                   SizedBox(
                     height: 20,
@@ -51,6 +60,7 @@ class _WorksPageState extends State<WorksPage> {
                   SizedBox(
                     height: 50,
                   ),
+                  
                 ],
               );
             }

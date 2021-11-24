@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:threshold/aboutpage.dart';
-import 'package:threshold/workspage.dart';
+import 'package:Ikigai/aboutpage.dart';
+import 'package:Ikigai/workspage.dart';
 
 import 'landingpage.dart';
 
