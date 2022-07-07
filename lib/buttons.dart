@@ -239,7 +239,7 @@ class _EmailButtonState extends State<EmailButton> {
       },
       child: GestureDetector(
         onTap: () {
-          launch("mailto:Rolex3393@gmail.com");
+          launch("mailto:Contact@rolexs.in");
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
