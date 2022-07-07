@@ -277,7 +277,7 @@ class _EmailButtonState extends State<EmailButton> {
                   color: brownColor,
                 ),
                 SelectableText(
-                  'Rolex3393@gmail.com',
+                  'Contact@rolex.in',
                   style: TextStyle(
                     color: brownColor,
                     fontFamily: 'Poppins',
