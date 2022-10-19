@@ -144,7 +144,7 @@ class _AboutPageEduState extends State<AboutPageEdu> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          '',
+                                          'CGPA: 9.2/10',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -158,7 +158,7 @@ class _AboutPageEduState extends State<AboutPageEdu> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'High School',
+                                          '\nHigh School',
                                           style: TextStyle(
                                             color: jadeColor,
                                             fontFamily: 'Poppins',

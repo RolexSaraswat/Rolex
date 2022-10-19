@@ -18,7 +18,10 @@ dependencies:
   url_launcher_web: ^0.1.1+6
   url_launcher: ^5.4.11
   dwds: ^5.0.0
-  modal_bottom_sheet: ^0.2.0+1
+  modal_bottom_sheet: ^2.1.0
+  animated_text_kit: ^4.2.2
+  flutter_full_pdf_viewer: ^1.0.4
+  
 
   cupertino_icons: ^0.1.3
 
@@ -85,16 +88,18 @@ flutter:
           weight: 400
   assets: 
     - assets/images/
+    
    
     - assets/images/Education.png
     - assets/images/Skills.png
-    - assets/images/rol.jpg
+    - assets/images/roll.png
     - assets/images/aesbg.jpg
     - assets/images/Intro.png
     - assets/icons/icons8-github-30.png
     - assets/icons/icons8-instagram-30.png
     - assets/icons/icons8-linkedin-2-30.png
-   
+    - assets/images/workbg/Okapp.png   
+    - assets/images/workbg/ikdhh.png 
     - assets/images/workbg/ikigaii.png
     - assets/images/workbg/Arena.png
     - assets/images/workbg/Hustle.png
@@ -104,6 +109,7 @@ flutter:
     - assets/images/workbg/Ikshana.png
     - assets/images/workbg/Designs.png
     - assets/images/workbg/ujjay/
+    - assets/images/workbg/okapp/
     - assets/images/workbg/pointify/
     - assets/images/workbg/hustle/
     - assets/images/workbg/Design/

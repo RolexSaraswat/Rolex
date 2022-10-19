@@ -127,7 +127,7 @@ class _AboutPageState extends State<AboutPage> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'I am a Sophomore student pursuing B.Tech',
+                                          'Logical and organised individual with a strong\nfoundation in software engineering.\nProficient in C++, Python, Java and Firebase.\nAbility to translate business requirements into\ninnovative software solutions.\nExcellent teamwork, interpersonal and\ncommunication skills.\nLooking to start a career as an entry-level\nprofessional with a reputed IT company.',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -138,76 +138,76 @@ class _AboutPageState extends State<AboutPage> {
                                         ),
                                       ],
                                     ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          'in Computer Science with Specialization in AI.',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          'A Designer by Heart, my priority always',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          'lies in building intuitive, attractive &',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          'efficient Projects.',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
+                                    // Row(
+                                    //   children: <Widget>[
+                                    //     Text(
+                                    //       'in Computer Science with Specialization in AI.',
+                                    //       style: TextStyle(
+                                    //         color: aquaColor,
+                                    //         fontFamily: 'Poppins',
+                                    //         fontWeight: FontWeight.w400,
+                                    //         fontSize:
+                                    //             displayWidth(context) * 0.018,
+                                    //       ),
+                                    //     ),
+                                    //   ],
+                                    // ),
+                                    // Row(
+                                    //   children: <Widget>[
+                                    //     Text(
+                                    //       '',
+                                    //       style: TextStyle(
+                                    //         color: aquaColor,
+                                    //         fontFamily: 'Poppins',
+                                    //         fontWeight: FontWeight.w400,
+                                    //         fontSize:
+                                    //             displayWidth(context) * 0.018,
+                                    //       ),
+                                    //     ),
+                                    //   ],
+                                    // ),
+                                    // Row(
+                                    //   children: <Widget>[
+                                    //     Text(
+                                    //       'A Designer by Heart, my priority always',
+                                    //       style: TextStyle(
+                                    //         color: aquaColor,
+                                    //         fontFamily: 'Poppins',
+                                    //         fontWeight: FontWeight.w400,
+                                    //         fontSize:
+                                    //             displayWidth(context) * 0.018,
+                                    //       ),
+                                    //     ),
+                                    //   ],
+                                    // ),
+                                    // Row(
+                                    //   children: <Widget>[
+                                    //     Text(
+                                    //       'lies in building intuitive, attractive &',
+                                    //       style: TextStyle(
+                                    //         color: aquaColor,
+                                    //         fontFamily: 'Poppins',
+                                    //         fontWeight: FontWeight.w400,
+                                    //         fontSize:
+                                    //             displayWidth(context) * 0.018,
+                                    //       ),
+                                    //     ),
+                                    //   ],
+                                    // ),
+                                    // Row(
+                                    //   children: <Widget>[
+                                    //     Text(
+                                    //       'efficient Projects.',
+                                    //       style: TextStyle(
+                                    //         color: aquaColor,
+                                    //         fontFamily: 'Poppins',
+                                    //         fontWeight: FontWeight.w400,
+                                    //         fontSize:
+                                    //             displayWidth(context) * 0.018,
+                                    //       ),
+                                    //     ),
+                                    //   ],
+                                    // ),
                                     Row(
                                       children: <Widget>[
                                         Text(
@@ -445,7 +445,7 @@ class _AboutPageState extends State<AboutPage> {
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          'I am a Sophomore student pursuing B.Tech',
+                                          'Logical and organised individual with a strong foundation in software engineering.',
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',

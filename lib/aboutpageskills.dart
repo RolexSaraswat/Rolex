@@ -85,7 +85,7 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                             MainAxisAlignment.start,
                                         children: <Widget>[
                                           Text(
-                                            'Skills.',
+                                            'Skills & Intrests.',
                                             style: TextStyle(
                                               color: brownColor,
                                               fontFamily: 'Poppins',
@@ -99,37 +99,61 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                     ),
                                     // Spacer(),
                                     Row(
+                                 
                                       children: <Widget>[
+                                        
                                         Text(
-                                          'UI/UX Design',
+                                          'Technical Languages',
+                                          textAlign: TextAlign.left,
                                           style: TextStyle(
                                             color: jadeColor,
                                             fontFamily: 'Poppins',
+                                            
+
                                             fontWeight: FontWeight.w400,
                                             fontSize:
                                                 displayWidth(context) * 0.018,
                                           ),
                                         ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
+                                        SizedBox(
+                                          width: 50,
+                                        ),
                                         Text(
-                                          'App Development',
+                                          'Database',
+                                          textAlign: TextAlign.right,
                                           style: TextStyle(
                                             color: jadeColor,
                                             fontFamily: 'Poppins',
+                                                  
+
                                             fontWeight: FontWeight.w400,
                                             fontSize:
                                                 displayWidth(context) * 0.018,
                                           ),
                                         ),
+                                        
                                       ],
                                     ),
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          '• Android App Devlopement with Java',
+                                          '• Java             • C++\n• Python         • Dart\n• JavaScript  • SQL\n',
+                                            textAlign: TextAlign.left,
+                                          style: TextStyle(
+                                            color: aquaColor,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w400,
+                                            fontSize:
+                                                displayWidth(context) * 0.018,
+                                          ),
+                                        ),
+                                                        SizedBox(
+                                                  width: 90,
+                                                ),
+
+                                        Text(
+                                          '• Firebase    • Realm\n• MongoDB  • SQLite\n• Postgres\n',
+                                          
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -140,150 +164,62 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                         ),
                                       ],
                                     ),
-                                    Row(
+                                     Row(
+                                 
                                       children: <Widget>[
+                                        
                                         Text(
-                                          '• IOS App Devlopement With Swift',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '• Cross-Platform Devlopement With Flutter',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          'Web Development',
+                                          'Frameworks',
+                                          textAlign: TextAlign.left,
                                           style: TextStyle(
                                             color: jadeColor,
                                             fontFamily: 'Poppins',
+                                            
+
                                             fontWeight: FontWeight.w400,
                                             fontSize:
                                                 displayWidth(context) * 0.018,
                                           ),
                                         ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '• HTML',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
+                                        SizedBox(
+                                          width: 170,
                                         ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
                                         Text(
-                                          '• CSS',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '• Bootstrap',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '• Django ',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '• ReactJs',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '• AngularJs',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          'Programming Languages',
+                                          'Cloud Services',
+                                          textAlign: TextAlign.right,
                                           style: TextStyle(
                                             color: jadeColor,
                                             fontFamily: 'Poppins',
+                                                  
+
                                             fontWeight: FontWeight.w400,
                                             fontSize:
                                                 displayWidth(context) * 0.018,
                                           ),
                                         ),
+                                        
                                       ],
                                     ),
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          '• C++',
+                                          '• Android    • React\n  Studio        • Django\n• Flutter       • Xcode ',
+                                            textAlign: TextAlign.left,
+                                          style: TextStyle(
+                                            color: aquaColor,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w400,
+                                            fontSize:
+                                                displayWidth(context) * 0.018,
+                                          ),
+                                        ),
+                                                        SizedBox(
+                                                  width: 75,
+                                                ),
+
+                                        Text(
+                                          '• Azure         • AWS\n• Heroku  \n',
+                                          
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -295,23 +231,34 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                       ],
                                     ),
                                     Row(
+                                 
                                       children: <Widget>[
+                                        
                                         Text(
-                                          '• Python',
+                                          'Miscellaneous',
+                                          textAlign: TextAlign.left,
                                           style: TextStyle(
-                                            color: aquaColor,
+                                            color: jadeColor,
                                             fontFamily: 'Poppins',
+                                            
+
                                             fontWeight: FontWeight.w400,
                                             fontSize:
                                                 displayWidth(context) * 0.018,
                                           ),
                                         ),
+                                        SizedBox(
+                                          width: 50,
+                                        ),
+                                        
+                                        
                                       ],
                                     ),
                                     Row(
                                       children: <Widget>[
                                         Text(
-                                          '• Java',
+                                          '• Git              • Agile Methodologies         • APIs\n• Github      • Adobe PS        • UI/UX\n• Leadership & Communication',
+                                            textAlign: TextAlign.left, 
                                           style: TextStyle(
                                             color: aquaColor,
                                             fontFamily: 'Poppins',
@@ -320,22 +267,13 @@ class _AboutPageSkillsState extends State<AboutPageSkills> {
                                                 displayWidth(context) * 0.018,
                                           ),
                                         ),
+                                                       
+                                        
                                       ],
                                     ),
-                                    Row(
-                                      children: <Widget>[
-                                        Text(
-                                          '• Dart',
-                                          style: TextStyle(
-                                            color: aquaColor,
-                                            fontFamily: 'Poppins',
-                                            fontWeight: FontWeight.w400,
-                                            fontSize:
-                                                displayWidth(context) * 0.018,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
+                                    
+                                    
+                                    
                                     //Spacer(),
                                   ],
                                 ),

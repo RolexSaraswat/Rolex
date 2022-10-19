@@ -1,3 +1,4 @@
+import 'package:Ikigai/navitems.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:Ikigai/buttons.dart';
@@ -24,7 +25,7 @@ class _LandingPageState extends State<LandingPage> {
               return ListView(
                 physics: BouncingScrollPhysics(),
                 children: <Widget>[
-                  NavBar(),
+                   NavBar(),
                   SizedBox(
                     height: 50,
                   ),
@@ -41,9 +42,11 @@ class _LandingPageState extends State<LandingPage> {
                       Column(
                         children: <Widget>[
                           Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
+                            
                             children: <Widget>[
+                              LandingTextThree(),
                               LandingTextOne(),
+
                               LandingTextThree(),
                               LandingTextTwo(),
                             ],
@@ -94,50 +97,94 @@ class _LandingPageState extends State<LandingPage> {
             if (sizingInformation.deviceScreenType ==
                 DeviceScreenType.mobile) {
             return ListView(
-                
+               // physics: BouncingScrollPhysics(),
                 children: <Widget>[
-                  
-                  
+                  // NavBar(),
+                  // SizedBox(
+                  //   height: 50,
+                  // ),
                   Column(
-                    
+
+
                     children: <Widget>[
-                      Column(
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          SizedBox(
-                            width: 109,
-                          )
+                          ThresholdCard(),
+
                         ],
                       ),
                       Row(
                         children: <Widget>[
+                          SizedBox(
+                            height: 30,
+                          )
+                        ],
+                      ),
+                      Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
                           Column(
-                           
                             children: <Widget>[
                               LandingTextOne(),
                               LandingTextThree(),
                               LandingTextTwo(),
-                             
                             ],
                           ),
-                         
-                         
-                          
+                          SizedBox(
+                            height: 100,
+                          ),]),
+                      Row(
+                        children: <Widget>[
+                          SizedBox(
+                            height: 59,
+                          )
                         ],
                       ),
+
                       Row(
-                       
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                          Row(children: <Widget>[
+
+                            WorksNav(),SizedBox(
+                              width: 70,
+                            ),AboutNav(),
+                          ],),
+                             Row(
+                              children: <Widget>[
+                                GithubButton(),
+                                SizedBox(
+                                  width: 70,
+                                ),
+                                LinkedinButton(),
+                                SizedBox(
+                                  width: 70,
+                                ),
+                                InstagramButton(),
+                              ],
+                            ),
+    ]),//hell
+
+
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: <Widget>[
                           SizedBox(
                             width: 109,
                           )
                         ],
                       ),
-                     
+
                     ],
                   ),
-                
+                  SizedBox(
+                    height: 100,
+                  ),
                 ],
-              );}
+              );
+              }
           },
         ),
       ),

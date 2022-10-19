@@ -427,7 +427,7 @@ class _IkshanaCardState extends State<IkshanaCard> {
                         borderRadius: BorderRadius.all(Radius.circular(30)),
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage('assets/images/workbg/Ikshana.png'),
+                          image: AssetImage('assets/images/workbg/ikdhh.png'),
                         ),
                       ),
                       //width: displayWidth(context) * 0.9,
@@ -512,3 +512,67 @@ class _LsCardState extends State<LsCard> {
     );
   }
 }
+class OkappCard extends StatefulWidget {
+  @override
+  _OkappCardState createState() => _OkappCardState();
+}
+
+class _OkappCardState extends State<OkappCard> {
+  bool hover = false;
+  double opacity = 1.0;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: displayHeight(context) * 0.7,
+      child: MouseRegion(
+        onEnter: (event) {
+          setState(() {
+            hover = true;
+            opacity = 0.4;
+          });
+        },
+        onExit: (event) {
+          setState(() {
+            hover = false;
+            opacity = 1.0;
+          });
+        },
+        child: Stack(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: AnimatedOpacity(
+                    curve: Curves.easeInOut,
+                    duration: Duration(milliseconds: 300),
+                    opacity: opacity,
+                    child: AnimatedContainer(
+                      duration: Duration(milliseconds: 200),
+                      height: displayHeight(context) * 0.7,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/images/workbg/OKapp.png'),
+                        ),
+                      ),
+                      //width: displayWidth(context) * 0.9,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: (hover) ? LsDetailsButton() : null,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+

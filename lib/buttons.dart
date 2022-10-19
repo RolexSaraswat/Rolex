@@ -1003,7 +1003,7 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context ) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,
@@ -1236,7 +1236,7 @@ class _HustleDetailsButtonState extends State<HustleDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,
@@ -1451,7 +1451,7 @@ class _PointifyDetailsButtonState extends State<PointifyDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,
@@ -1692,7 +1692,7 @@ class _ArenaDetailsButtonState extends State<ArenaDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,
@@ -1907,7 +1907,7 @@ class _UjjayDetailsButtonState extends State<UjjayDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,
@@ -2130,7 +2130,7 @@ class _HappyusDetailsButtonState extends State<HappyusDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,
@@ -2333,7 +2333,7 @@ class _IkshanaDetailsButtonState extends State<IkshanaDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,
@@ -2394,12 +2394,13 @@ class _IkshanaDetailsButtonState extends State<IkshanaDetailsButton> {
                       height: 30,
                     ),
                     Text(
-                      "IKSHANA is my first Machine learning project. It takes Braille image as input and gives segmented braille along with translation to English and text to speech feature. Currently available in: \n Web using Python-Flask \n Android using JAVA \n IOS using Swift \n This was a quite challenging project. ",
+                      'Technologies Used -  Language(Java), Web Framework(Flask), ML Framework(OpenCV), VCS(Git).\n A simple application that let users learn braille regardless of how much experience they have.\nImplemented a standard 6-cell keyboard to practice and Braille Image processing using OpenCV and ML Libraries to provide a segregated image and translate it into Text and speech.\nAchievement - Gained accolades from the university and a proposal to write a research paper on the implementation using CNN.',
+                      // "IKSHANA is my first Machine learning project. It takes Braille image as input and gives segmented braille along with translation to English and text to speech feature. Currently available in: \n Web using Python-Flask \n Android using JAVA \n IOS using Swift \n This was a quite challenging project. ",
                       style: TextStyle(
                         color: aquaColor,
                         fontFamily: 'Poppins',
                         fontWeight: FontWeight.w200,
-                        fontSize: displayWidth(context) * 0.02,
+                        fontSize: displayWidth(context) * 0.018,
                       ),
                     ),
                     SizedBox(
@@ -2536,7 +2537,7 @@ class _LsDetailsButtonState extends State<LsDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
-            builder: (context, scrollController) => Container(
+            builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
                 color: beigeColor,

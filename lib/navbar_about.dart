@@ -21,6 +21,10 @@ class NavBarAbout extends StatelessWidget {
                   width: 60,
                 ),
                 WorksNav(),
+                SizedBox(
+                  width: 60,
+                ),
+                ResumeNav(),
               ],
             ),
           ],

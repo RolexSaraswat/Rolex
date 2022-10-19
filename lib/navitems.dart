@@ -6,6 +6,8 @@ import 'package:Ikigai/hover_extensions.dart';
 import 'package:Ikigai/landingpage.dart';
 import 'package:Ikigai/sizes_helper.dart';
 import 'package:Ikigai/workspage.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 import 'aboutpage.dart';
 
@@ -239,4 +241,62 @@ class _LogoNavState extends State<LogoNav> {
       ),
     );
   }
+}
+
+class ResumeNav extends StatefulWidget {
+  @override
+  _ResumeNavState createState() => _ResumeNavState();
+}
+
+class _ResumeNavState extends State<ResumeNav> {
+  double lineWidth = 0;
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (event) {
+        setState(() {
+          lineWidth = displayWidth(context) * 0.022;
+        });
+      },
+      onExit: (event) {
+        setState(() {
+          lineWidth = 0;
+        });
+      },
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Hero(
+            tag: "Resume",
+            child: GestureDetector(
+              onTap: () {
+                launch('https://drive.google.com/file/d/1sknaX3tIZdaAEn7YBYqe19vVSpLdXFFJ/view?usp=sharing');
+              }
+                
+              ,
+              child: Material(
+                type: MaterialType.transparency,
+                child: Text(
+                  'Resume',
+                  style: TextStyle(
+                    color: blackColor,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w400,
+                    fontSize: displayWidth(context) * 0.015,
+                  ),
+                ),
+              ),
+            ).showCursorOnHover.shiftOnHover,
+          ),
+          AnimatedContainer(
+            duration: Duration(milliseconds: 200),
+            width: lineWidth,
+            height: 1.5,
+            color: blackColor,
+          ),
+        ],
+      ),
+    );
+  }
+  
 }

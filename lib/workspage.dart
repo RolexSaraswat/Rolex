@@ -27,6 +27,10 @@ class _WorksPageState extends State<WorksPage> {
                   SizedBox(
                     height: 50,
                   ),
+                  OkappCard(),
+                  SizedBox(
+                    height: 50,
+                  ),
                   IkshanaCard(),
                   SizedBox(
                     height: 50,
