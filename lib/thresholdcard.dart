@@ -45,7 +45,7 @@ class _ThresholdCardState extends State<ThresholdCard> {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/rol.jpg'),
+                  image: AssetImage('assets/images/rolexpic.jpg'),
                 ),
                 boxShadow: [
                   BoxShadow(

@@ -7,6 +7,7 @@ import 'colors.dart';
 class LandingTextOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+<<<<<<< Updated upstream
     // return Text(
     //   'This is Rolex Saraswat.',
     //   textAlign: TextAlign.left,
@@ -35,6 +36,18 @@ class LandingTextOne extends StatelessWidget {
     ),
   ),
 );
+=======
+    return Text(
+      'This is Rolex Saraswat.',
+      textAlign: TextAlign.left,
+      style: TextStyle(
+        color: brownColor,
+        fontFamily: 'glor',
+        fontWeight: FontWeight.w400,
+        fontSize: displayWidth(context) * 0.035,
+      ),
+    );
+>>>>>>> Stashed changes
   }
 }
 
@@ -42,6 +55,7 @@ class LandingTextOne extends StatelessWidget {
 class LandingTextTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+<<<<<<< Updated upstream
     return SizedBox(
       width:550,
       
@@ -53,6 +67,16 @@ class LandingTextTwo extends StatelessWidget {
         fontFamily: 'Poppins',
         fontSize: 30,
        
+=======
+    return Text(
+      'An ambivert with a pinch of\nhumour and intellect, a memer\nfrom inside and a developer\nfrom outside.',
+      textAlign: TextAlign.left,
+      style: TextStyle(
+        color: aquaColor,
+        fontFamily: 'glor',
+        fontWeight: FontWeight.w400,
+        fontSize: displayWidth(context) * 0.028,
+>>>>>>> Stashed changes
       ),
     )
     );

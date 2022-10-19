@@ -239,7 +239,11 @@ class _EmailButtonState extends State<EmailButton> {
       },
       child: GestureDetector(
         onTap: () {
+<<<<<<< Updated upstream
           launch("mailto:Contact@rolexs.in");
+=======
+          launch("mailto:Contac@Rolexs.in");
+>>>>>>> Stashed changes
         },
         child: AnimatedContainer(
           duration: Duration(milliseconds: 400),
@@ -277,7 +281,11 @@ class _EmailButtonState extends State<EmailButton> {
                   color: brownColor,
                 ),
                 SelectableText(
+<<<<<<< Updated upstream
                   'Contact@rolex.in',
+=======
+                  'Contact@rolexs.in',
+>>>>>>> Stashed changes
                   style: TextStyle(
                     color: brownColor,
                     fontFamily: 'Poppins',
@@ -1003,6 +1011,7 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
+<<<<<<< Updated upstream
             builder: (context ) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
@@ -1132,6 +1141,137 @@ class _ThresholdDetailsButtonState extends State<ThresholdDetailsButton> {
                 ),
               ),
             ),
+=======
+            // builder: (context, scrollController) => Container(
+            //   height: displayHeight(context) * 0.9,
+            //   decoration: BoxDecoration(
+            //     color: beigeColor,
+            //   ),
+            //   child: CenteredView(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       physics: BouncingScrollPhysics(),
+            //       children: [
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             IconButton(
+            //               icon: Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: brownColor,
+            //                 size: displayWidth(context) * 0.025,
+            //               ),
+            //               onPressed: () {
+            //                 Navigator.pop(context);
+            //               },
+            //             ),
+            //             Column(
+            //               crossAxisAlignment: CrossAxisAlignment.center,
+            //               children: [
+            //                 Text(
+            //                   'Ikigai',
+            //                   style: TextStyle(
+            //                     color: brownColor,
+            //                     fontFamily: 'Poppins',
+            //                     fontWeight: FontWeight.w200,
+            //                     fontSize: displayWidth(context) * 0.025,
+            //                   ),
+            //                 ),
+            //                 TweenAnimationBuilder(
+            //                   duration: Duration(milliseconds: 1000),
+            //                   tween: Tween<double>(
+            //                     begin: 0,
+            //                     end: displayWidth(context) * 0.05,
+            //                   ),
+            //                   builder: (context, value, child) {
+            //                     return AnimatedContainer(
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(30),
+            //                         color: brownColor,
+            //                       ),
+            //                       duration: Duration(milliseconds: 200),
+            //                       width: value,
+            //                       height: 2.5,
+            //                     );
+            //                   },
+            //                 ),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Text(
+            //           "Ikigai, the name of my first Portfolio Website. \nIt features all my Projects and Work, and also a few things you would like to know about me. \nTried to experiment with a different design as compared to most other Portfolio websites.",
+            //           style: TextStyle(
+            //             color: aquaColor,
+            //             fontFamily: 'Poppins',
+            //             fontWeight: FontWeight.w200,
+            //             fontSize: displayWidth(context) * 0.02,
+            //           ),
+            //         ),
+            //         SizedBox(
+            //           height: 10,
+            //         ),
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: [
+            //             ThresholdProjectButton(),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               border: Border.all(color: Colors.black12),
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 alignment: Alignment.topCenter,
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/threshold/ikigai3.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               border: Border.all(color: Colors.black12),
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/threshold/ikigai2.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               border: Border.all(color: Colors.black12),
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 alignment: Alignment.bottomCenter,
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/threshold/ikigai1.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+>>>>>>> Stashed changes
           );
         },
         child: TweenAnimationBuilder(
@@ -1236,6 +1376,7 @@ class _HustleDetailsButtonState extends State<HustleDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
+<<<<<<< Updated upstream
             builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
@@ -1347,6 +1488,119 @@ class _HustleDetailsButtonState extends State<HustleDetailsButton> {
                 ),
               ),
             ),
+=======
+            // builder: (context, scrollController) => Container(
+            //   height: displayHeight(context) * 0.9,
+            //   decoration: BoxDecoration(
+            //     color: beigeColor,
+            //   ),
+            //   child: CenteredView(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       physics: BouncingScrollPhysics(),
+            //       children: [
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             IconButton(
+            //               icon: Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: brownColor,
+            //                 size: displayWidth(context) * 0.025,
+            //               ),
+            //               onPressed: () {
+            //                 Navigator.pop(context);
+            //               },
+            //             ),
+            //             Column(
+            //               crossAxisAlignment: CrossAxisAlignment.center,
+            //               children: [
+            //                 Text(
+            //                   'Urrban Farm',
+            //                   style: TextStyle(
+            //                     color: brownColor,
+            //                     fontFamily: 'Poppins',
+            //                     fontWeight: FontWeight.w200,
+            //                     fontSize: displayWidth(context) * 0.025,
+            //                   ),
+            //                 ),
+            //                 TweenAnimationBuilder(
+            //                   duration: Duration(milliseconds: 1000),
+            //                   tween: Tween<double>(
+            //                     begin: 0,
+            //                     end: displayWidth(context) * 0.05,
+            //                   ),
+            //                   builder: (context, value, child) {
+            //                     return AnimatedContainer(
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(30),
+            //                         color: brownColor,
+            //                       ),
+            //                       duration: Duration(milliseconds: 200),
+            //                       width: value,
+            //                       height: 2.5,
+            //                     );
+            //                   },
+            //                 ),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Text(
+            //           "Urrban Farm, one of Mangata's first projects, was to basically create was to create software solutions for product based startup, creating website and applications on both android, using Java and iOs, using Swift as the backend language, showcasing both my designing and development as a full stack developer.",
+            //           style: TextStyle(
+            //             color: aquaColor,
+            //             fontFamily: 'Poppins',
+            //             fontWeight: FontWeight.w200,
+            //             fontSize: displayWidth(context) * 0.02,
+            //           ),
+            //         ),
+            //         SizedBox(
+            //           height: 10,
+            //         ),
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: [
+            //             HustleProjectButton(),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/hustle/urrb2.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/hustle/urrb1.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+>>>>>>> Stashed changes
           );
         },
         child: TweenAnimationBuilder(
@@ -1451,6 +1705,7 @@ class _PointifyDetailsButtonState extends State<PointifyDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
+<<<<<<< Updated upstream
             builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
@@ -1588,6 +1843,145 @@ class _PointifyDetailsButtonState extends State<PointifyDetailsButton> {
                 ),
               ),
             ),
+=======
+            // builder: (context, scrollController) => Container(
+            //   height: displayHeight(context) * 0.9,
+            //   decoration: BoxDecoration(
+            //     color: beigeColor,
+            //   ),
+            //   child: CenteredView(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       physics: BouncingScrollPhysics(),
+            //       children: [
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             IconButton(
+            //               icon: Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: brownColor,
+            //                 size: displayWidth(context) * 0.025,
+            //               ),
+            //               onPressed: () {
+            //                 Navigator.pop(context);
+            //               },
+            //             ),
+            //             Column(
+            //               crossAxisAlignment: CrossAxisAlignment.center,
+            //               children: [
+            //                 Text(
+            //                   'Cue',
+            //                   style: TextStyle(
+            //                     color: brownColor,
+            //                     fontFamily: 'Poppins',
+            //                     fontWeight: FontWeight.w200,
+            //                     fontSize: displayWidth(context) * 0.025,
+            //                   ),
+            //                 ),
+            //                 TweenAnimationBuilder(
+            //                   duration: Duration(milliseconds: 1000),
+            //                   tween: Tween<double>(
+            //                     begin: 0,
+            //                     end: displayWidth(context) * 0.05,
+            //                   ),
+            //                   builder: (context, value, child) {
+            //                     return AnimatedContainer(
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(30),
+            //                         color: brownColor,
+            //                       ),
+            //                       duration: Duration(milliseconds: 200),
+            //                       width: value,
+            //                       height: 2.5,
+            //                     );
+            //                   },
+            //                 ),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Text(
+            //           "Cue is a smart period detection android application which not only helps you to keep a monitored track of your period cycle but also comes with other features enhancing user experience. Cue gives you a one-day prior notification for your next cycle so as that the user can be mentally prepared beforehand. The application has an user friendly interface and was mainly designed keeping the UI in view.",
+            //           style: TextStyle(
+            //             color: aquaColor,
+            //             fontFamily: 'Poppins',
+            //             fontWeight: FontWeight.w200,
+            //             fontSize: displayWidth(context) * 0.02,
+            //           ),
+            //         ),
+            //         SizedBox(
+            //           height: 10,
+            //         ),
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: [
+            //             PointifyProjectButton(),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/pointify/cue1.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/pointify/cue2.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/pointify/cue3.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/pointify/cue4.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+>>>>>>> Stashed changes
           );
         },
         child: TweenAnimationBuilder(
@@ -1692,6 +2086,7 @@ class _ArenaDetailsButtonState extends State<ArenaDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
+<<<<<<< Updated upstream
             builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
@@ -1803,6 +2198,119 @@ class _ArenaDetailsButtonState extends State<ArenaDetailsButton> {
                 ),
               ),
             ),
+=======
+            // builder: (context, scrollController) => Container(
+            //   height: displayHeight(context) * 0.9,
+            //   decoration: BoxDecoration(
+            //     color: beigeColor,
+            //   ),
+            //   child: CenteredView(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       physics: BouncingScrollPhysics(),
+            //       children: [
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             IconButton(
+            //               icon: Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: brownColor,
+            //                 size: displayWidth(context) * 0.025,
+            //               ),
+            //               onPressed: () {
+            //                 Navigator.pop(context);
+            //               },
+            //             ),
+            //             Column(
+            //               crossAxisAlignment: CrossAxisAlignment.center,
+            //               children: [
+            //                 Text(
+            //                   'Mångata',
+            //                   style: TextStyle(
+            //                     color: brownColor,
+            //                     fontFamily: 'Poppins',
+            //                     fontWeight: FontWeight.w200,
+            //                     fontSize: displayWidth(context) * 0.025,
+            //                   ),
+            //                 ),
+            //                 TweenAnimationBuilder(
+            //                   duration: Duration(milliseconds: 1000),
+            //                   tween: Tween<double>(
+            //                     begin: 0,
+            //                     end: displayWidth(context) * 0.05,
+            //                   ),
+            //                   builder: (context, value, child) {
+            //                     return AnimatedContainer(
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(30),
+            //                         color: brownColor,
+            //                       ),
+            //                       duration: Duration(milliseconds: 200),
+            //                       width: value,
+            //                       height: 2.5,
+            //                     );
+            //                   },
+            //                 ),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Text(
+            //           "Mångata, My initiative and startup aimed at providing development solutions on Applications, Websites and other cross plaform development, Still in progress, This here basically showcase my on hand skills on designing as the logo and mockups are designed by me using photoshop.",
+            //           style: TextStyle(
+            //             color: aquaColor,
+            //             fontFamily: 'Poppins',
+            //             fontWeight: FontWeight.w200,
+            //             fontSize: displayWidth(context) * 0.02,
+            //           ),
+            //         ),
+            //         SizedBox(
+            //           height: 10,
+            //         ),
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: [
+            //             ArenaProjectButton(),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/arena/logo.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/arena/mangata_insta.jpeg'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+>>>>>>> Stashed changes
           );
         },
         child: TweenAnimationBuilder(
@@ -1907,6 +2415,7 @@ class _UjjayDetailsButtonState extends State<UjjayDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
+<<<<<<< Updated upstream
             builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
@@ -2026,6 +2535,127 @@ class _UjjayDetailsButtonState extends State<UjjayDetailsButton> {
                 ),
               ),
             ),
+=======
+            // builder: (context, scrollController) => Container(
+            //   height: displayHeight(context) * 0.9,
+            //   decoration: BoxDecoration(
+            //     color: beigeColor,
+            //   ),
+            //   child: CenteredView(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       physics: BouncingScrollPhysics(),
+            //       children: [
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             IconButton(
+            //               icon: Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: brownColor,
+            //                 size: displayWidth(context) * 0.025,
+            //               ),
+            //               onPressed: () {
+            //                 Navigator.pop(context);
+            //               },
+            //             ),
+            //             Column(
+            //               crossAxisAlignment: CrossAxisAlignment.center,
+            //               children: [
+            //                 Text(
+            //                   'Edulex',
+            //                   style: TextStyle(
+            //                     color: brownColor,
+            //                     fontFamily: 'Poppins',
+            //                     fontWeight: FontWeight.w200,
+            //                     fontSize: displayWidth(context) * 0.025,
+            //                   ),
+            //                 ),
+            //                 TweenAnimationBuilder(
+            //                   duration: Duration(milliseconds: 1000),
+            //                   tween: Tween<double>(
+            //                     begin: 0,
+            //                     end: displayWidth(context) * 0.05,
+            //                   ),
+            //                   builder: (context, value, child) {
+            //                     return AnimatedContainer(
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(30),
+            //                         color: brownColor,
+            //                       ),
+            //                       duration: Duration(milliseconds: 200),
+            //                       width: value,
+            //                       height: 2.5,
+            //                     );
+            //                   },
+            //                 ),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Text(
+            //           "Edulex is an Augmented reality android application made to ease out primary education in the tough times such as COVID.\nWhere all one on one interaction among the students and teachers is hindered, keeping this in mind the main objective of the app was to provide a real life and on hand examples that a would have happened in real classroom.\nIntegrated with AR, the app uses the user's back camera to showcase 3D models on Skeleton, Plants and Planets making it much easier for the students to understand.\n",
+            //           style: TextStyle(
+            //             color: aquaColor,
+            //             fontFamily: 'Poppins',
+            //             fontWeight: FontWeight.w200,
+            //             fontSize: displayWidth(context) * 0.02,
+            //           ),
+            //         ),
+            //         SizedBox(
+            //           height: 10,
+            //         ),
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: [
+            //             UjjayProjectButton(),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/ujjay/edulex1.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/ujjay/edu1.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/ujjay/edu2.png'),
+            //               )),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+>>>>>>> Stashed changes
           );
         },
         child: TweenAnimationBuilder(
@@ -2130,6 +2760,7 @@ class _HappyusDetailsButtonState extends State<HappyusDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
+<<<<<<< Updated upstream
             builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
@@ -2228,6 +2859,106 @@ class _HappyusDetailsButtonState extends State<HappyusDetailsButton> {
                 ),
               ),
             ),
+=======
+            // builder: (context, scrollController) => Container(
+            //   height: displayHeight(context) * 0.9,
+            //   decoration: BoxDecoration(
+            //     color: beigeColor,
+            //   ),
+            //   child: CenteredView(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       physics: BouncingScrollPhysics(),
+            //       children: [
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             IconButton(
+            //               icon: Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: brownColor,
+            //                 size: displayWidth(context) * 0.025,
+            //               ),
+            //               onPressed: () {
+            //                 Navigator.pop(context);
+            //               },
+            //             ),
+            //             Column(
+            //               crossAxisAlignment: CrossAxisAlignment.center,
+            //               children: [
+            //                 Text(
+            //                   'HappyUs',
+            //                   style: TextStyle(
+            //                     color: brownColor,
+            //                     fontFamily: 'Poppins',
+            //                     fontWeight: FontWeight.w200,
+            //                     fontSize: displayWidth(context) * 0.025,
+            //                   ),
+            //                 ),
+            //                 TweenAnimationBuilder(
+            //                   duration: Duration(milliseconds: 1000),
+            //                   tween: Tween<double>(
+            //                     begin: 0,
+            //                     end: displayWidth(context) * 0.05,
+            //                   ),
+            //                   builder: (context, value, child) {
+            //                     return AnimatedContainer(
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(30),
+            //                         color: brownColor,
+            //                       ),
+            //                       duration: Duration(milliseconds: 200),
+            //                       width: value,
+            //                       height: 2.5,
+            //                     );
+            //                   },
+            //                 ),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Text(
+            //           "HappyUs was one of my intern projects, development of a web-application/ Website of a NON profit Organisation with BootstrapMade, implemented using Django framework and published on herokuapp.",
+            //           style: TextStyle(
+            //             color: aquaColor,
+            //             fontFamily: 'Poppins',
+            //             fontWeight: FontWeight.w200,
+            //             fontSize: displayWidth(context) * 0.02,
+            //           ),
+            //         ),
+            //         SizedBox(
+            //           height: 10,
+            //         ),
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: [
+            //             HappyusProjectButton(),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/happyus/ha.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+>>>>>>> Stashed changes
           );
         },
         child: TweenAnimationBuilder(
@@ -2537,6 +3268,7 @@ class _LsDetailsButtonState extends State<LsDetailsButton> {
               topRight: Radius.circular(30),
             )),
             context: context,
+<<<<<<< Updated upstream
             builder: (context) => Container(
               height: displayHeight(context) * 0.9,
               decoration: BoxDecoration(
@@ -2688,6 +3420,161 @@ class _LsDetailsButtonState extends State<LsDetailsButton> {
                 ),
               ),
             ),
+=======
+            // builder: (context, scrollController) {
+            //   return Container(
+            //   height: displayHeight(context) * 0.9,
+            //   decoration: BoxDecoration(
+            //     color: beigeColor,
+            //   ),
+            //   child: CenteredView(
+            //     child: ListView(
+            //       shrinkWrap: true,
+            //       physics: BouncingScrollPhysics(),
+            //       children: [
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //           children: [
+            //             IconButton(
+            //               icon: Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: brownColor,
+            //                 size: displayWidth(context) * 0.025,
+            //               ),
+            //               onPressed: () {
+            //                 Navigator.pop(context);
+            //               },
+            //             ),
+            //             Column(
+            //               crossAxisAlignment: CrossAxisAlignment.center,
+            //               children: [
+            //                 Text(
+            //                   'Graphic Designs',
+            //                   style: TextStyle(
+            //                     color: brownColor,
+            //                     fontFamily: 'Poppins',
+            //                     fontWeight: FontWeight.w200,
+            //                     fontSize: displayWidth(context) * 0.025,
+            //                   ),
+            //                 ),
+            //                 TweenAnimationBuilder(
+            //                   duration: Duration(milliseconds: 1000),
+            //                   tween: Tween<double>(
+            //                     begin: 0,
+            //                     end: displayWidth(context) * 0.05,
+            //                   ),
+            //                   builder: (context, value, child) {
+            //                     return AnimatedContainer(
+            //                       decoration: BoxDecoration(
+            //                         borderRadius: BorderRadius.circular(30),
+            //                         color: brownColor,
+            //                       ),
+            //                       duration: Duration(milliseconds: 200),
+            //                       width: value,
+            //                       height: 2.5,
+            //                     );
+            //                   },
+            //                 ),
+            //               ],
+            //             ),
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Text(
+            //           "As a Developer and graphic designer, I know what brands need to capture their audiences' attention. With my powerful design skills and knack for Developement, I have the audacity to make my work exemplary.",
+            //           style: TextStyle(
+            //             color: aquaColor,
+            //             fontFamily: 'Poppins',
+            //             fontWeight: FontWeight.w200,
+            //             fontSize: displayWidth(context) * 0.02,
+            //           ),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Row(
+            //           mainAxisAlignment: MainAxisAlignment.center,
+            //           children: [
+            //
+            //           ],
+            //         ),
+            //         SizedBox(
+            //           height: 20,
+            //         ),
+            //
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/Design/Ls.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/Design/mang.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/Design/tcb.jpeg'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/Design/hs.png'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //         Container(
+            //           height: displayHeight(context) * 0.8,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.circular(20),
+            //               image: DecorationImage(
+            //                 fit: BoxFit.cover,
+            //                 image: AssetImage(
+            //                     'assets/images/workbg/Design/ik.JPG'),
+            //               )),
+            //         ),
+            //         SizedBox(
+            //           height: 30,
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // );
+            // },
+>>>>>>> Stashed changes
           );
         },
         child: TweenAnimationBuilder(
